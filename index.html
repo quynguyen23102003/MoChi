@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,9 +25,17 @@
         }
 
         @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         @keyframes fadeInUp {
@@ -34,6 +43,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -45,6 +55,7 @@
                 opacity: 0;
                 transform: scale(0.8);
             }
+
             to {
                 opacity: 1;
                 transform: scale(1);
@@ -56,6 +67,7 @@
                 opacity: 0;
                 transform: translateX(-50px);
             }
+
             to {
                 opacity: 1;
                 transform: translateX(0);
@@ -67,6 +79,7 @@
                 opacity: 0;
                 transform: translateX(50px);
             }
+
             to {
                 opacity: 1;
                 transform: translateX(0);
@@ -74,33 +87,87 @@
         }
 
         @keyframes heartBeat {
-            0% { transform: scale(1); }
-            25% { transform: scale(1.05); }
-            50% { transform: scale(1); }
-            75% { transform: scale(1.02); }
-            100% { transform: scale(1); }
+            0% {
+                transform: scale(1);
+            }
+
+            25% {
+                transform: scale(1.05);
+            }
+
+            50% {
+                transform: scale(1);
+            }
+
+            75% {
+                transform: scale(1.02);
+            }
+
+            100% {
+                transform: scale(1);
+            }
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
         }
 
         @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-            40% { transform: translateY(-10px); }
-            60% { transform: translateY(-5px); }
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-10px);
+            }
+
+            60% {
+                transform: translateY(-5px);
+            }
         }
 
         @keyframes sparkle {
-            0%, 100% { opacity: 0; transform: scale(0) rotate(0deg); }
-            50% { opacity: 1; transform: scale(1) rotate(180deg); }
+
+            0%,
+            100% {
+                opacity: 0;
+                transform: scale(0) rotate(0deg);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1) rotate(180deg);
+            }
         }
 
         @keyframes celebrationPulse {
-            0% { transform: scale(1); background: rgba(230, 126, 126, 0.95); }
-            50% { transform: scale(1.1); background: rgba(255, 200, 200, 0.95); }
-            100% { transform: scale(1); background: rgba(230, 126, 126, 0.95); }
+            0% {
+                transform: scale(1);
+                background: rgba(230, 126, 126, 0.95);
+            }
+
+            50% {
+                transform: scale(1.1);
+                background: rgba(255, 200, 200, 0.95);
+            }
+
+            100% {
+                transform: scale(1);
+                background: rgba(230, 126, 126, 0.95);
+            }
         }
 
         .main-container {
@@ -115,7 +182,7 @@
             width: 100%;
             background: white;
             border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -166,7 +233,7 @@
             width: 100%;
             background: white;
             border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             grid-template-columns: 1fr 1fr;
             position: relative;
@@ -213,7 +280,7 @@
             border-radius: 15px;
             object-fit: cover;
             margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             animation: fadeInScale 0.8s ease-out 0.3s both;
             transition: transform 0.3s ease;
         }
@@ -237,15 +304,17 @@
             margin-bottom: 10px;
             font-style: italic;
             animation: heartBeat 2s ease-in-out 1s infinite;
+            font-family: 'MJ Bestdone', cursive;
         }
 
         .birthday-party-text {
-            font-size: 2.2em;
+            font-size: 3.2em;
             color: #e67e7e;
             margin-bottom: 20px;
             font-style: italic;
             font-weight: 300;
             animation: float 3s ease-in-out infinite;
+            font-family: 'MJ Bestdone', cursive;
         }
 
         .invitation-text-main {
@@ -277,7 +346,7 @@
 
         .venue-section {
             background: #f9f5f5;
-            padding: 25px;
+            padding: 15px;
             border-radius: 15px;
             margin: 20px 0;
             text-align: center;
@@ -311,10 +380,11 @@
         }
 
         .month-label {
-            font-size: 1.8em;
+            font-size: 3em;
             color: #e67e7e;
             font-style: italic;
             margin-bottom: 5px;
+            font-family: 'MJ Bestdone', cursive;
         }
 
         .day-label {
@@ -337,10 +407,11 @@
         }
 
         .year {
-            font-size: 1.5em;
+            font-size: 5em;
             color: #e67e7e;
             font-style: italic;
             margin-top: 10px;
+            font-family: 'MJ Bestdone', cursive;
         }
 
         .closing-text {
@@ -411,7 +482,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
             transition: left 0.5s;
         }
 
@@ -445,7 +516,7 @@
             color: white;
             padding: 30px 40px;
             border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
             text-align: center;
             z-index: 1000;
             font-size: 1.2em;
@@ -472,7 +543,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0,0,0,0.5);
+            background: rgba(0, 0, 0, 0.5);
             z-index: 999;
         }
 
@@ -480,43 +551,52 @@
             display: block;
         }
 
+        @font-face {
+            font-family: 'MJ Bestdone';
+            src: url('fonts/MJBestdone.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         @media (max-width: 768px) {
+
             .invitation-container,
             .birthday-details {
                 grid-template-columns: 1fr;
                 gap: 15px;
                 padding: 15px;
             }
-            
+
             .invitation-image {
                 min-height: 400px;
             }
-            
+
             .buttons {
                 flex-direction: column;
                 gap: 15px;
                 width: 100%;
                 max-width: 300px;
             }
-            
+
             .btn {
                 width: 100%;
                 padding: 12px 20px;
                 font-size: 0.9em;
             }
-            
-            .birthday-panel, .details-panel {
+
+            .birthday-panel,
+            .details-panel {
                 padding: 30px 20px;
             }
-            
+
             .birthday-name {
                 font-size: 2.2em;
             }
-            
+
             .birthday-party-text {
                 font-size: 1.8em;
             }
-            
+
             .event-date {
                 font-size: 3em;
             }
@@ -529,6 +609,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Overlay for celebration message -->
     <div class="overlay" id="overlay" onclick="hideCelebration()"></div>
@@ -541,7 +622,7 @@
 
     <div class="main-container">
         <!-- Main Invitation Page -->
-        <div class="invitation-container" id="mainPage">        
+        <div class="invitation-container" id="mainPage">
             <div class="left-panel">
                 <!-- Thay thế src bằng đường dẫn đến ảnh 1 của bạn -->
                 <img src="images/1.jpg" alt="Birthday Invitation" class="invitation-image">
@@ -562,16 +643,16 @@
         <!-- Birthday Details Page -->
         <div class="birthday-details" id="birthdayDetailsPage">
             <button class="back-btn" onclick="showMainPage()">← Quay lại</button>
-            
+
             <div class="birthday-panel">
                 <!-- Thay thế src bằng đường dẫn đến ảnh sinh nhật của bạn -->
                 <img src="images/3.jpg" alt="Gia Linh Birthday" class="birthday-image">
-                
+
                 <div class="main-title">Mừng Thôi Nôi</div>
-                
+
                 <div class="birthday-name">Gia Linh</div>
                 <div class="birthday-party-text">Birthday Party</div>
-                
+
                 <div class="invitation-text-main">Trân trọng kính mời</div>
             </div>
 
@@ -584,7 +665,7 @@
 
                 <div class="venue-section">
                     <div class="venue-icon">📍</div>
-                    <div class="venue-name">Én Restaurant & Event Space</div>
+                    <div class="venue-name">Tại Gia</div>
                     <div class="venue-address">
                         26/7 Số 5 Đường 9A, Ấp Hậu, xã Tân Thông Hội,<br>
                         Huyện Củ Chi, TPHCM
@@ -592,9 +673,9 @@
                 </div>
 
                 <div class="event-details">
-                    <div class="month-label">Tháng Tám</div>
+                    <div class="month-label">Tháng Bảy</div>
                     <div class="day-label">Thứ 7</div>
-                    <div class="event-date">02</div>
+                    <div class="event-date">26</div>
                     <div class="time-label">... giờ</div>
                     <div class="year">2025</div>
                 </div>
@@ -619,17 +700,17 @@
             const detailsPage = document.getElementById('birthdayDetailsPage');
             const mainButtons = document.getElementById('mainButtons');
             const detailsButtons = document.getElementById('detailsButtons');
-            
+
             // Add exit animation to main page
             mainPage.style.animation = 'fadeInScale 0.5s ease-in reverse';
             mainButtons.style.animation = 'fadeInUp 0.5s ease-in reverse';
-            
+
             setTimeout(() => {
                 mainPage.style.display = 'none';
                 mainButtons.style.display = 'none';
                 detailsPage.classList.add('active');
                 detailsButtons.style.display = 'flex';
-                
+
                 // Reset animations for details page
                 detailsPage.style.animation = 'fadeInScale 0.8s ease-out';
                 detailsButtons.style.animation = 'fadeInUp 0.8s ease-out 0.3s both';
@@ -641,17 +722,17 @@
             const detailsPage = document.getElementById('birthdayDetailsPage');
             const mainButtons = document.getElementById('mainButtons');
             const detailsButtons = document.getElementById('detailsButtons');
-            
+
             // Add exit animation to details page
             detailsPage.style.animation = 'fadeInScale 0.5s ease-in reverse';
             detailsButtons.style.animation = 'fadeInUp 0.5s ease-in reverse';
-            
+
             setTimeout(() => {
                 detailsPage.classList.remove('active');
                 detailsButtons.style.display = 'none';
                 mainPage.style.display = 'grid';
                 mainButtons.style.display = 'flex';
-                
+
                 // Reset animations for main page
                 mainPage.style.animation = 'fadeInScale 0.8s ease-out';
                 mainButtons.style.animation = 'fadeInUp 0.8s ease-out 0.3s both';
@@ -662,7 +743,7 @@
             // Add celebration animation to button
             const button = event.target;
             button.style.animation = 'celebrationPulse 0.6s ease';
-            
+
             // Show celebration message
             setTimeout(() => {
                 showCelebration();
@@ -673,10 +754,10 @@
         function showCelebration() {
             const overlay = document.getElementById('overlay');
             const celebrationMessage = document.getElementById('celebrationMessage');
-            
+
             overlay.classList.add('show');
             celebrationMessage.classList.add('show');
-            
+
             // Auto hide after 4 seconds
             setTimeout(() => {
                 hideCelebration();
@@ -686,7 +767,7 @@
         function hideCelebration() {
             const overlay = document.getElementById('overlay');
             const celebrationMessage = document.getElementById('celebrationMessage');
-            
+
             overlay.classList.remove('show');
             celebrationMessage.classList.remove('show');
         }
@@ -708,9 +789,9 @@
                 particle.style.top = Math.random() * 80 + 10 + '%';
                 particle.style.opacity = '0.7';
                 particle.style.zIndex = '1';
-                
+
                 container.appendChild(particle);
-                
+
                 // Remove particle after animation
                 setTimeout(() => {
                     if (particle.parentNode) {
@@ -721,17 +802,18 @@
         }
 
         // Initialize particles on page load
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             setTimeout(createFloatingParticles, 1000);
             setInterval(createFloatingParticles, 6000);
         });
 
         // Close celebration message when clicking outside
-        document.addEventListener('keydown', function(e) {
+        document.addEventListener('keydown', function (e) {
             if (e.key === 'Escape') {
                 hideCelebration();
             }
         });
     </script>
 </body>
+
 </html>
